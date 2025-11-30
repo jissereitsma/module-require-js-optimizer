@@ -41,6 +41,7 @@ class Config extends AbstractHelper {
             $areaCode = 'cli';
         }
 
+        return true;
         if (
             $areaCode === 'cli' ||
             $areaCode === 'frontend' &&
