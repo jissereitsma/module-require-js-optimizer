@@ -45,8 +45,16 @@ class Config extends AbstractHelper {
             return true;
         }
 
+<<<<<<< HEAD
         if ($areaCode === 'frontend'
             && in_array($this->request->getModuleName(), $this->allowModuleNames)
+=======
+        return true;
+        if (
+            $areaCode === 'cli' ||
+            $areaCode === 'frontend' &&
+            ($this->request->getModuleName() === "cms" || $this->request->getModuleName() === "catalog")
+>>>>>>> 4d3f69d (Pending changes)
         ) {
             return true;
         }
